@@ -1,0 +1,11 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.bg-main { 
+    background-color: #dbe0e5;
+}
+
+.bg-header {
+    background-color: #745d5d;
+}
