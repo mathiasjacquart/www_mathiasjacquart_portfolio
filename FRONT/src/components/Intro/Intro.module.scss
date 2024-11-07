@@ -1,0 +1,54 @@
+
+// .bgOverlay { 
+//     $quantity: 15;
+//     .firefly {
+//         position: fixed;
+//         left: 50%;
+//         top: 50%;
+//         width: 0.4vw;
+//         height: 0.4vw;
+//         margin: -0.2vw 0 0 9.8vw;
+//         pointer-events: none;
+      
+//         &::before,
+//         &::after {
+//           content: '';
+//           position: absolute;
+//           width: 100%;
+//           height: 100%;
+//           border-radius: 50%;
+//           transform-origin: -10vw;
+//         }
+      
+//         &::before {
+//           background: black;
+//           opacity: 0.4;
+//           animation: drift ease alternate infinite;
+//         }
+      
+//         &::after {
+//           background: white;
+//           opacity: 0;
+//           box-shadow: 0 0 0vw 0vw yellow;
+//           animation: drift ease alternate infinite, flash ease infinite;
+//         }
+//       }
+      
+//       @for $i from 1 through $quantity
+//         {$steps: random(12) + 16;
+//         $rotationSpeed: random(10) + 8s;
+//         }
+//         .firefly:nth-child(#{$i}) {
+//           animation-name: move#{$i};
+//           animation-duration: $rotationSpeed;
+//         }
+      
+//         @keyframes move#{$i} {
+//           @for $step from 0 through $steps {
+//             #{$step * (100 / $steps)}% {
+//               transform: translateX(#{random(100) - 50}vw) translateY(#{random(100) - 50}vh) scale(#{random(75) / 100 + .25});
+//             }
+//           }
+//         }
+// }
+

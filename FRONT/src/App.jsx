@@ -1,14 +1,20 @@
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import Portrait from "./components/Portrait/Portrait";
+import Intro from "./components/Intro/Intro";
+import Skills from "./components/Skills/Skills"
+import Portfolio from "./components/Portfolio/Portfolio"
+import Contact from "./components/Contact/Contact"
 import "./App.module.css"
+
 function App() {
   return (
-    <div className={`d-flex flex-column bg-main`}>
+    <div className={`d-flex flex-column bg-main mh-100 w-100`}>
       <Header />
-      <div className="flex-fill">
-        <h1 className="text-3xl text-fuchsia-950">App</h1>
-
-      </div>
+      <Intro></Intro>
+      <Portrait></Portrait>
+      <Skills></Skills>
+      <Portfolio></Portfolio>
       <Footer />
     </div>
   );
